@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextEvent_name" type="id" />
+    <item name="editTextEvent_location" type="id" />
+    <item name="editTextDate" type="id" />
+    <item name="editTextTime" type="id" />
+    <item name="editTextOrganiser" type="id" />
+    <item name="btn_saved" type="id" />
+    <item name="displayinfo" type="id" />
+    <item name="newQuantityTxt" type="id"/>
+    <item name="saleproduct" type="id"/>
+    <item name="viewproducts" type="id"/>
+    <item name="item3" type="id" />
+    <item name="item4" type="id" />
+</resources>

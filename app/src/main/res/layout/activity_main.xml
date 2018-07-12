@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sstgroup.petrolstation.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/truck"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        </ListView>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:id="@+id/update_button"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/viewusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_2"
+        android:layout_marginEnd="30dp"
+        android:layout_alignBaseline="@+id/update_button"
+        android:layout_alignBottom="@+id/update_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/viewproducts" />
+
+    <Button
+        android:id="@+id/saleproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale"
+        android:layout_alignBaseline="@+id/viewproducts"
+        android:layout_alignBottom="@+id/viewproducts"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/viewproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="View Products"
+        android:layout_below="@+id/viewusers"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
+
+    <!--android:onClick="btn_update"-->
+
+</RelativeLayout>
